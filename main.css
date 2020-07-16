@@ -1,169 +1,249 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .header {
-            display: flex;
-            line-height: 110px;
-            padding: 0 40px;
-            border-bottom: #192a88 1px;
-            background-color: #ffffff;
-        }
-        
-        .header .logo {
-            flex-basis: 25%;
-        }
-        
-        .header .logo a {
-            color: black;
-            text-decoration: none;
-            font-size: 20px;
-            letter-spacing: 2px;
-        }
-        
-        .header .logo i {
-            padding-right: 5px;
-            color: #192a88;
-        }
-        
-        .header .nav {
-            flex-basis: 75%;
-        }
-        
-        .nav .nav-list {
-            display: flex;
-            float: right;
-        }
-        
-        .nav .nav-list li {
-            list-style: none;
-            margin: 0 20px;
-            font-weight: bold;
-        }
-        
-        .nav .nav-list li a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .nav .nav-list li a:hover {
-            color: #192a88;
-        }
-        
-        .nav .nav-list li a i {
-            color: #192a88;
-            font-size: 20px;
-            padding-left: 5px;
-        }
-        
-        .container {
-            display: flex;
-            background-image: url(boy-looking-on-a-tidied-desk-2781814.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            height: 100vh;
-        }
-        
-        .container-content {
-            flex-basis: 35%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            background-color: #FFF1E0;
-        }
-        
-        .container-content h2 {
-            font-size: 60px;
-        }
-        
-        .container-content p {
-            font-size: 17px;
-            padding: 20px 0;
-        }
-        
-        .container-content a {
-            background-color: #192a88;
-            color: white;
-            font-weight: bold;
-            padding: 15px 30px;
-            text-decoration: none;
-        }
-        
-        .container-content a:hover {
-            background-color: #9cc4e5;
-        }
-        
-        .container-image {
-            flex-basis: 65%;
-        }
-        
-        .container-image img {
-            width: 100%;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        
-        .content {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding: 130px;
-        }
-        
-        .content-question {
-            flex-basis: 30%;
-            margin-right: 200px;
-        }
-        
-        .content-question h3 {
-            font-size: 30px;
-        }
-        
-        .content-question p {
-            letter-spacing: 2px;
-            padding: 35px 0;
-            line-height: 30px;
-        }
-        
-        .content-question-button a {
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: bold;
-            background-color: #192a88;
-            font-size: 20px;
-            padding: 10px 30px;
-        }
-        
-        .content-detail {
-            flex-basis: 70%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            justify-items: center;
-            grid-gap: 10px;
-        }
-        
-        .detail {
-            padding-top: 30px;
-        }
-        
-        .content-detail h3 {
-            font-size: 25px;
-        }
-        
-        .content-detail p {
-            font-size: 14px;
-            letter-spacing: 1px;
-            line-height: 25px;
-            width: 80%;
-        }
-        
-        .content-detail img {
-            padding: 15px 0;
-        }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .header {
+     display: flex;
+     line-height: 110px;
+     padding: 0 40px;
+     border-bottom: #192a88 1px;
+     background-color: #ffffff;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 100vw;
+ }
+ 
+ .header .logo {
+     flex-basis: 25%;
+ }
+ 
+ .header .logo a {
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+     letter-spacing: 2px;
+ }
+ 
+ .header .logo i {
+     padding-right: 5px;
+     color: #192a88;
+ }
+ 
+ .header .nav {
+     flex-basis: 75%;
+ }
+ 
+ .nav .nav-list {
+     display: flex;
+     float: right;
+ }
+ 
+ .nav .nav-list li {
+     list-style: none;
+     margin: 0 20px;
+     font-weight: bold;
+ }
+ 
+ .nav .nav-list li a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .nav .nav-list li a:hover {
+     color: #192a88;
+ }
+ 
+ .nav .nav-list li a i {
+     color: #192a88;
+     font-size: 20px;
+     padding-left: 5px;
+ }
+ 
+ .container {
+     display: flex;
+     background-image: url(img/boy-looking-on-a-tidied-desk-2781814.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     height: 100vh;
+ }
+ 
+ .container-content {
+     flex-basis: 35%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background-color: #FFF1E0;
+ }
+ 
+ .container-content h2 {
+     font-size: 60px;
+ }
+ 
+ .container-content p {
+     font-size: 17px;
+     padding: 20px 0;
+ }
+ 
+ .container-content a {
+     background-color: #192a88;
+     color: white;
+     font-weight: bold;
+     padding: 15px 30px;
+     text-decoration: none;
+ }
+ 
+ .container-content .button {
+     margin-top: 30px;
+ }
+ 
+ .container-content a:hover {
+     background-color: #9cc4e5;
+ }
+ 
+ .container-image {
+     flex-basis: 65%;
+ }
+ 
+ .container-image img {
+     width: 100%;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+ 
+ .content {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     padding: 130px;
+ }
+ 
+ .content-question {
+     flex-basis: 30%;
+     margin-right: 200px;
+ }
+ 
+ .content-question h3 {
+     font-size: 30px;
+ }
+ 
+ .content-question p {
+     letter-spacing: 2px;
+     padding: 35px 0;
+     line-height: 30px;
+ }
+ 
+ .content-question-button a {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+     background-color: #192a88;
+     font-size: 20px;
+     padding: 10px 30px;
+ }
+ 
+ .content-detail {
+     flex-basis: 70%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     justify-items: center;
+     grid-gap: 10px;
+ }
+ 
+ .detail {
+     padding-top: 30px;
+ }
+ 
+ .content-detail h3 {
+     font-size: 25px;
+ }
+ 
+ .content-detail p {
+     font-size: 14px;
+     letter-spacing: 1px;
+     line-height: 25px;
+     width: 80%;
+ }
+ 
+ .content-detail img {
+     padding: 15px 0;
+ }
+ 
+ .reviews {
+     background: #f3f3f3;
+     height: 600px;
+ }
+ 
+ .reviews-container {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     width: 90%;
+     height: 100%;
+     margin: auto;
+     grid-gap: 150px;
+     padding: 100px 0;
+ }
+ 
+ .reviews-title {
+     flex-basis: 40%;
+ }
+ 
+ .reviews-title h3 {
+     font-size: 30px;
+     margin-right: 300px;
+ }
+ 
+ .carousel-container {
+     height: 100%;
+ }
+ 
+ .carousel-slide {
+     display: flex;
+     height: 100%;
+     position: relative;
+ }
+ 
+ .items {
+     width: 700px;
+     margin-right: 300px;
+ }
+ 
+ .items p {
+     font-size: 20px;
+     line-height: 30px;
+     letter-spacing: 2px;
+     color: gray;
+     margin-bottom: 100px;
+ }
+ 
+ .items h3 {
+     position: relative;
+ }
+ 
+ .items h3::after {
+     content: ' ';
+     position: absolute;
+     height: 4px;
+     width: 230px;
+     border-top: 3px solid black;
+     left: 0;
+     top: -15px;
+ }
+ 
+ .crousel-container a {
+     text-align: center;
+     color: black;
+ }
+ 
+ .button-carousel {
+     position: absolute;
+     bottom: 50px;
+     left: 300px;
+ }
