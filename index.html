@@ -7,8 +7,9 @@
     <title>Online Lessons</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 
@@ -77,48 +78,40 @@
     </div>
     <!-- ----------------- -->
     <div class="reviews">
-        <div class="reviews-container">
-            <div class="reviews-title">
-                <h3>Reviews</h3>
-                <p>I'm a paragraph. Click here to add your own text and edit me.</p>
-            </div>
-            <!-- --------------- -->
-            <div class="crousel-container">
-                <div class="carousel-slide">
-                    <div class="items slider-item3" id="last-item">
+        <div class="review-content">
+            <h3>Reviews</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+        </div>
+
+        <div class="carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</p>
-                        <h3>Jason, Karen's dad</h3>
-                    </div>
-                    <div class="items slider-item1">
-                        <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
-                        </p>
                         <h3>Lisa, Dina's mom</h3>
                     </div>
-                    <div class=" items slider-item2">
+                    <div class="swiper-slide">
                         <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</p>
                         <h3>Dan, Sally's dad</h3>
                     </div>
-                    <div class="items slider-item3">
+                    <div class="swiper-slide">
                         <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</p>
                         <h3>Jason, Karen's dad</h3>
                     </div>
-                    <div class="items slider-item1" id="fisrt-items">
-                        <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
-                        </p>
-                        <h3>Lisa, Dina's mom</h3>
-                    </div>
-                    <div class="button-carousel">
-                        <a href="" id="prevbtn"><i class="fas fa-dot-circle    "></i> </a>
-                        <a href="" id="nextbtn"><i class=" fas fa-dot-circle   "></i></a>
-                    </div>
-                </div>
 
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- myJs -->
+    <script src="app.js"></script>
 </body>
 
 </html>

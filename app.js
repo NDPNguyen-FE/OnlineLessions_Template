@@ -1,13 +1,17 @@
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselItems = document.querySelectorAll('.items');
+//swipperCrousel
+var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+
+    },
 
 
-//button
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-
-//count
-let counter = 1;
-const size = carouselItems[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
