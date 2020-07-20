@@ -1,252 +1,407 @@
-     * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         font-family: Helvetica, sans-serif;
-     }
-     
-     .header {
-         display: flex;
-         line-height: 110px;
-         padding: 0 40px;
-         border-bottom: #192a88 1px;
-         background-color: #ffffff;
-         position: fixed;
-         top: 0;
-         right: 0;
-         width: 100vw;
-     }
-     
-     .header .logo {
-         flex-basis: 25%;
-     }
-     
-     .header .logo a {
-         color: black;
-         text-decoration: none;
-         font-size: 20px;
-         letter-spacing: 2px;
-     }
-     
-     .header .logo i {
-         padding-right: 5px;
-         color: #192a88;
-     }
-     
-     .header .nav {
-         flex-basis: 75%;
-     }
-     
-     .nav .nav-list {
-         display: flex;
-         float: right;
-     }
-     
-     .nav .nav-list li {
-         list-style: none;
-         margin: 0 20px;
-         font-weight: bold;
-     }
-     
-     .nav .nav-list li a {
-         text-decoration: none;
-         color: black;
-     }
-     
-     .nav .nav-list li a:hover {
-         color: #192a88;
-     }
-     
-     .nav .nav-list li a i {
-         color: #192a88;
-         font-size: 20px;
-         padding-left: 5px;
-     }
-     
-     .container {
-         display: flex;
-         background-image: url(img/boy-looking-on-a-tidied-desk-2781814.jpg);
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         background-position: center;
-         height: 100vh;
-     }
-     
-     .container-content {
-         flex-basis: 35%;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         text-align: center;
-         background-color: #FFF1E0;
-     }
-     
-     .container-content h2 {
-         font-size: 60px;
-     }
-     
-     .container-content p {
-         font-size: 17px;
-         padding: 20px 0;
-     }
-     
-     .container-content a {
-         background-color: #192a88;
-         color: white;
-         font-weight: bold;
-         padding: 15px 30px;
-         text-decoration: none;
-     }
-     
-     .container-content .button {
-         margin-top: 30px;
-     }
-     
-     .container-content a:hover {
-         transition: all 0.3s ease-in-out;
-         background-color: #9cc4e5;
-     }
-     
-     .container-image {
-         flex-basis: 65%;
-     }
-     
-     .container-image img {
-         width: 100%;
-         background-size: cover;
-         background-attachment: fixed;
-     }
-     
-     .content {
-         display: flex;
-         justify-content: center;
-         width: 100%;
-         padding: 130px;
-     }
-     
-     .content-question {
-         flex-basis: 30%;
-         margin-right: 200px;
-     }
-     
-     .content-question h3 {
-         font-size: 30px;
-     }
-     
-     .content-question p {
-         letter-spacing: 2px;
-         padding: 35px 0;
-         line-height: 30px;
-     }
-     
-     .content-question-button a {
-         text-decoration: none;
-         color: #ffffff;
-         font-weight: bold;
-         background-color: #192a88;
-         font-size: 20px;
-         padding: 10px 30px;
-         transition: all 0.3s ease-in-out;
-     }
-     
-     .content-question-button a:hover {
-         background-color: #9cc4e5;
-     }
-     
-     .content-detail {
-         flex-basis: 70%;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(2, 1fr);
-         justify-items: center;
-         grid-gap: 10px;
-     }
-     
-     .detail {
-         padding-top: 30px;
-     }
-     
-     .content-detail h3 {
-         font-size: 25px;
-     }
-     
-     .content-detail p {
-         font-size: 14px;
-         letter-spacing: 1px;
-         line-height: 25px;
-         width: 80%;
-     }
-     
-     .content-detail img {
-         padding: 15px 0;
-     }
-     
-     .reviews {
-         height: 80vh;
-         background-color: #f3f3f3;
-         display: flex;
-     }
-     
-     .review-content {
-         flex-basis: 40%;
-         height: 100%;
-         padding: 100px 0 0 70px;
-     }
-     
-     .review-content h3 {
-         font-size: 35px;
-     }
-     
-     .review-content p {
-         width: 250px;
-         padding-top: 30px;
-         line-height: 30px;
-         letter-spacing: 2px;
-     }
-     
-     .carousel {
-         flex-basis: 60%;
-         height: 100%;
-         overflow: hidden;
-         justify-content: center;
-         align-items: center;
-     }
-     
-     .swiper-container {
-         width: 100%;
-         height: 100%;
-     }
-     
-     .swiper-slide {
-         font-size: 18px;
-         display: flex;
-         flex-direction: column;
-         /* justify-content: center;
-         align-items: center; */
-         padding: 100px 60px;
-     }
-     
-     .swiper-slide h3 {
-         position: relative;
-         margin-top: 200px;
-     }
-     
-     .swiper-slide h3::after {
-         position: absolute;
-         content: ' ';
-         height: 4px;
-         width: 230px;
-         border-top: 4px solid black;
-         left: 0;
-         bottom: 30px;
-     }
-     
-     .swiper-slide p {
-         font-size: 20px;
-         letter-spacing: 2px;
-     }
-     
-     .swiper-pagination-bullet-active {
-         background: black !important;
-     }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Helvetica, sans-serif;
+ }
+ 
+ .header {
+     display: flex;
+     line-height: 110px;
+     padding: 0 40px;
+     border-bottom: #192a88 1px;
+     background-color: #ffffff;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 100vw;
+     z-index: 10;
+ }
+ 
+ .header .logo {
+     flex-basis: 25%;
+ }
+ 
+ .logo a {
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+     letter-spacing: 2px;
+ }
+ 
+ .logo i {
+     padding-right: 5px;
+     color: #192a88;
+ }
+ 
+ .header .nav {
+     flex-basis: 75%;
+ }
+ 
+ .nav .nav-list {
+     display: flex;
+     float: right;
+ }
+ 
+ .nav .nav-list li {
+     list-style: none;
+     margin: 0 20px;
+     font-weight: bold;
+ }
+ 
+ .nav .nav-list li a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .nav .nav-list li a:hover {
+     color: #192a88;
+ }
+ 
+ .nav .nav-list li a i {
+     color: #192a88;
+     font-size: 20px;
+     padding-left: 5px;
+ }
+ 
+ .container {
+     display: flex;
+     background-image: url(img/boy-looking-on-a-tidied-desk-2781814.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     height: 100vh;
+ }
+ 
+ .container-content {
+     flex-basis: 35%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background-color: #FFF1E0;
+ }
+ 
+ .container-content h2 {
+     font-size: 60px;
+ }
+ 
+ .container-content p {
+     font-size: 17px;
+     padding: 20px 0;
+ }
+ 
+ .container-content a {
+     background-color: #192a88;
+     color: white;
+     font-weight: bold;
+     padding: 15px 30px;
+     text-decoration: none;
+ }
+ 
+ .container-content .button {
+     margin-top: 30px;
+ }
+ 
+ .container-content a:hover {
+     transition: all 0.3s ease-in-out;
+     background-color: #9cc4e5;
+ }
+ 
+ .container-image {
+     flex-basis: 65%;
+ }
+ 
+ .container-image img {
+     width: 100%;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+ 
+ .content {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     padding: 130px;
+ }
+ 
+ .content-question {
+     flex-basis: 30%;
+     margin-right: 200px;
+ }
+ 
+ .content-question h3 {
+     font-size: 30px;
+ }
+ 
+ .content-question p {
+     letter-spacing: 2px;
+     padding: 35px 0;
+     line-height: 30px;
+ }
+ 
+ .content-question-button a {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+     background-color: #192a88;
+     font-size: 20px;
+     padding: 10px 30px;
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ .content-question-button a:hover {
+     background-color: #9cc4e5;
+ }
+ 
+ .content-detail {
+     flex-basis: 70%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     justify-items: center;
+     grid-gap: 10px;
+ }
+ 
+ .detail {
+     padding-top: 30px;
+ }
+ 
+ .content-detail h3 {
+     font-size: 25px;
+ }
+ 
+ .content-detail p {
+     font-size: 14px;
+     letter-spacing: 1px;
+     line-height: 25px;
+     width: 80%;
+ }
+ 
+ .content-detail img {
+     padding: 15px 0;
+ }
+ 
+ .reviews {
+     height: 80vh;
+     background-color: #f3f3f3;
+     display: flex;
+ }
+ 
+ .review-content {
+     flex-basis: 40%;
+     height: 100%;
+     padding: 100px 0 0 70px;
+ }
+ 
+ .review-content h3 {
+     font-size: 35px;
+ }
+ 
+ .review-content p {
+     width: 250px;
+     padding-top: 30px;
+     line-height: 30px;
+     letter-spacing: 2px;
+ }
+ 
+ .carousel {
+     flex-basis: 60%;
+     height: 100%;
+     overflow: hidden;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .swiper-container {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .swiper-slide {
+     font-size: 18px;
+     display: flex;
+     flex-direction: column;
+     padding: 100px 60px;
+ }
+ 
+ .swiper-slide h3 {
+     position: relative;
+     margin-top: 200px;
+ }
+ 
+ .swiper-slide h3::after {
+     position: absolute;
+     content: ' ';
+     height: 4px;
+     width: 230px;
+     border-top: 4px solid black;
+     left: 0;
+     bottom: 30px;
+ }
+ 
+ .swiper-slide p {
+     font-size: 20px;
+     letter-spacing: 2px;
+     width: 70%;
+     line-height: 30px;
+ }
+ 
+ .swiper-pagination-bullet-active {
+     background: black !important;
+ }
+ 
+ .footer {
+     height: 100vh;
+     background: #DCDEF7;
+ }
+ 
+ .contacts {
+     height: 100%;
+     padding: 150px 0 70px 70px;
+     display: flex;
+ }
+ 
+ .contact-content {
+     display: flex;
+     flex-basis: 40%;
+     height: 100%;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ 
+ .container-content-text h3 {
+     font-size: 35px;
+     line-height: 40px;
+     width: 280px;
+ }
+ 
+ .container-content-text p {
+     width: 250px;
+     line-height: 30px;
+     padding-top: 20px;
+     letter-spacing: 2px;
+ }
+ 
+ .contact-form {
+     flex-basis: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+ }
+ 
+ .form-input {
+     width: 80%;
+     margin: auto;
+ }
+ 
+ .input-information {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 20px;
+     width: 100%;
+ }
+ 
+ .form-input label {
+     font-weight: bold;
+     font-size: 25px;
+ }
+ 
+ .form-input input {
+     border: none;
+     outline: none;
+     line-height: 50px;
+     margin-top: 20px;
+     border: transparent;
+     border-bottom: 3px solid black;
+     background-color: transparent;
+     font-size: 20px;
+ }
+ 
+ .input-name,
+ .input-email {
+     display: flex;
+ }
+ 
+ .input-name,
+ .input-email {
+     flex-direction: column;
+     width: 100%;
+ }
+ 
+ .input-comment {
+     display: flex;
+     margin-top: 30px;
+     width: 100%;
+     position: relative;
+ }
+ 
+ .input-mess {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 75%;
+ }
+ 
+ .submit-button {
+     flex-basis: 25%;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+ }
+ 
+ .submit-button button {
+     width: 130px;
+     height: 50px;
+     border: 3px solid black;
+     background: transparent;
+     cursor: pointer;
+     transition: all 0.3s linear;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .submit-button button:hover {
+     background-color: #192a88;
+     color: #ffffff;
+     border: none;
+ }
+ 
+ .contact-detail {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     width: 80%;
+     margin: auto;
+     margin-top: 100px;
+ }
+ 
+ .contact-nav-list {
+     list-style: none;
+ }
+ 
+ .contact-nav-list li {
+     margin: 10px 0;
+ }
+ 
+ .contact-nav-list li a {
+     text-decoration: none;
+     letter-spacing: 2px;
+     color: black;
+ }
+ 
+ .contact-infor a {
+     text-decoration: none;
+     color: black;
+     letter-spacing: 2px;
+ }
+ 
+ .contact-infor p {
+     margin-top: 10px;
+     letter-spacing: 2px;
+ }
+ 
+ .footer span {
+     font-size: 14px;
+     line-height: 25px;
+ }
